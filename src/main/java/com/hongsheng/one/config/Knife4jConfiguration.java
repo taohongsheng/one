@@ -20,7 +20,7 @@ public class Knife4jConfiguration {
                 .apiInfo(new ApiInfoBuilder()
                         //描述字段支持Markdown语法
                         .description("# 一个简单的测试")
-                        .termsOfServiceUrl("https://baidu.com/")
+                        .termsOfServiceUrl("https://hongsheng.com/")
                         .contact("hongsheng.com")
                         .version("1.0")
                         .build())
