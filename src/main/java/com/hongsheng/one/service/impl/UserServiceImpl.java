@@ -13,12 +13,7 @@ public class UserServiceImpl implements UserService {
     @Autowired
     UserMapper userMapper;
     @Override
-    /**
-     * 登录验证
-     * @param name
-     * @param password
-     * @return
-     */
+
     public User loginIn(String name, String password) {
             return userMapper.getInfo(name, password);
 

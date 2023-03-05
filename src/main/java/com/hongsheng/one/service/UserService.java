@@ -18,6 +18,7 @@ public interface UserService {
     List<User> queryAllUser();
 
     List<User> findUsersByKeyword(String keyword);
+
     List<User> namePasswordById(String id);
 
 }

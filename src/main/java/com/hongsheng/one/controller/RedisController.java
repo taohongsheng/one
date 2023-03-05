@@ -22,10 +22,10 @@ public class RedisController {
 //        result.put("value",value);
 ////        return "success";
 //        return result.toString();
-        redisTemplate.opsForValue().set(key,value,100);
-        Map<String,String> result = new HashMap<>();
-        result.put("key",key);
-        result.put("value",value);
+        redisTemplate.opsForValue().set(key, value, 100);
+        Map<String, String> result = new HashMap<>();
+        result.put("key", key);
+        result.put("value", value);
         return result.toString();
     }
 

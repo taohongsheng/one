@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 @Api(tags = "修改模块")
 @Controller
 public class ModifyUserController {
@@ -52,6 +53,7 @@ public class ModifyUserController {
         modelMap.addAttribute("user", user);
         return "userInfo";
     }
+
     @ApiOperation(value = "删除测试")
     //删除用户
     @RequestMapping(value = "/deleteUser+{id}")
@@ -66,6 +68,7 @@ public class ModifyUserController {
             return "error";
         }
     }
+
     @ApiOperation(value = "修改测试")
     //修改用户信息
     @RequestMapping("/modifyUser")

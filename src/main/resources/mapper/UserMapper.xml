@@ -46,6 +46,7 @@
     <select id="findUsersByKeyword" resultType="com.hongsheng.one.entity.User">
         SELECT name FROM user WHERE name LIKE CONCAT('%', #{keyword}, '%')
     </select>
+    <!--通过id查找用户姓名密码-->
     <select id="namePasswordById" parameterType="String" resultType="com.hongsheng.one.entity.User">
         SELECT * FROM user
         WHERE id = #{id};

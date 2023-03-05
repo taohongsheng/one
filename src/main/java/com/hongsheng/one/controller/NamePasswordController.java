@@ -15,8 +15,9 @@ import java.util.List;
 public class NamePasswordController {
     @Autowired
     private UserService userService;
+
     @RequestMapping("/name")
-    public String namepassword(String id){
+    public String namepassword(String id) {
         List<User> users = userService.namePasswordById(id);
         return users.toString();
 
